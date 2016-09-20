@@ -38,14 +38,14 @@ public class CarStage extends JComponent {
 		int deltaxCar2 = randomNumbers.nextInt(theCar2.getHorizontalSpeed());
 		theCar2.moveInX(deltaxCar2);
 		if (theCar2.getXPos()+60 >= this.getWidth()) {
-			// Car 1 hit the wall
+			// Car 2 hit the wall
 			theCar2.setPosition(this.getWidth()-60, theCar2.getYPos());
 			someCarWon = true;
 		}
 		int deltaxCar3 = randomNumbers.nextInt(theCar3.getHorizontalSpeed());
 		theCar3.moveInX(deltaxCar3);
 		if (theCar3.getXPos()+60 >= this.getWidth()) {
-			// Car 1 hit the wall
+			// Car 3 hit the wall
 			theCar3.setPosition(this.getWidth()-60, theCar3.getYPos());
 			someCarWon = true;
 		}
